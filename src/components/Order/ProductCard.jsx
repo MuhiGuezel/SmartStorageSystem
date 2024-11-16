@@ -15,6 +15,7 @@ const ProductCard = ({ title, imageUrl, onOrder }) => {
       title={title}
       details={
         <>
+          <h3 style={{ textAlign: 'center', marginTop: '10px' }}>{title}</h3>
           <input
             type="number"
             value={amount}

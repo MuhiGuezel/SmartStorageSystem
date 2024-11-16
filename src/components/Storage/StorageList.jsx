@@ -5,24 +5,27 @@ const StorageList = () => {
   const storages = [
     {
       title: 'Storage 1',
+      productName: 'Nail',
       amount: 120,
       ga: 15,
       total: 1800,
-      imageUrl: 'https://via.placeholder.com/150',
+      imageUrl: 'src/assets/nail.jpg',
     },
     {
       title: 'Storage 2',
+      productName: 'Nut',
       amount: 200,
       ga: 10,
       total: 2000,
-      imageUrl: 'https://via.placeholder.com/150',
+      imageUrl: 'src/assets/nut.jpg',
     },
     {
       title: 'Storage 3',
+      productName: 'Screw',
       amount: 150,
       ga: 12,
       total: 1800,
-      imageUrl: 'https://via.placeholder.com/150',
+      imageUrl: 'src/assets/screw.png',
     },
   ];
 
@@ -32,6 +35,7 @@ const StorageList = () => {
         <StorageItem
           key={index}
           title={storage.title}
+          productName={storage.productName}
           amount={storage.amount}
           ga={storage.ga}
           total={storage.total}

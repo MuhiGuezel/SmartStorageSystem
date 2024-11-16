@@ -4,16 +4,20 @@ import ProductCard from './ProductCard';
 const ProductList = () => {
   const products = [
     {
+      title: 'Nail',
       imageUrl: 'src/assets/nail.jpg',
     },
     {
+      title: 'Nut',
       imageUrl: 'src/assets/nut.jpg',
     },
     {
+      title: 'Screw',
       imageUrl: 'src/assets/screw.png',
     },
     {
-      imageUrl: 'src/assets/product.png', // Replace with actual image
+      title: 'Long Screw',
+      imageUrl: 'src/assets/long_screw.jpeg', // Replace with actual image
     },
   ];
 
@@ -25,6 +29,7 @@ const ProductList = () => {
     <div className="flex flex-wrap gap-4 p-4 justify-center">
       {products.map((product, index) => (
         <ProductCard
+          title={product.title}
           key={index}
           imageUrl={product.imageUrl}
           onOrder={handleOrder}

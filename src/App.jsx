@@ -5,6 +5,7 @@ import HomePage from './components/Home/HomePage';
 import StoragesPage from './components/Storage/StoragesPage';
 import OrdersPage from './components/Order/OrdersPage';
 import PasswordInput from './components/shared/PasswordInput';
+import Connect from './components/Connect/Connect';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/storages" element={<StoragesPage />} />
           <Route path="/orders" element={<OrdersPage />} />
+          <Route path="/connect" element={<Connect />}/>
         </Routes>
       </div>
     </Router>
