@@ -9,7 +9,7 @@ const WelcomeSection = () => {
         At Smart Storage Systems, we specialize in providing innovative solutions for all your storage needs.
         Organize your life with ease and efficiency!
       </p>
-      <Link to="/Connect">
+      <Link to="/Connect/ConnectDevice">
         <button className="mt-6 bg-gradient-to-r from-purple-600 to-purple-400 px-6 py-3 text-lg rounded-lg shadow hover:shadow-lg hover:opacity-90 transition duration-300">
           Connect Your Device
         </button>
